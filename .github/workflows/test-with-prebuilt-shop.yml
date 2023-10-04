@@ -170,7 +170,7 @@ jobs:
       - name: Install playwright
         working-directory: ${{ env.PS_DIR }}/tests/UI
         run: |
-          npx playwright install chromium
+          npm install
 
       - name: Run campaign ${{ inputs.test_command }} on prebuilt shop
         uses: ./custom_actions/.github/workflows/actions/run-tests
